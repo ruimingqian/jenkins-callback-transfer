@@ -1,0 +1,4 @@
+server:
+  port: 8274
+yzj:
+  url: "https://www.yunzhijia.com/gateway/robot/webhook/send?yzjtype=0&yzjtoken=426d2d48cd33475299c0ba263e1f77d4"

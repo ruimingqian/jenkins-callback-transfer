@@ -1,0 +1,173 @@
+2024-06-27 13:50:41,135 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 98657 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 13:50:41,136 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 13:50:41,414 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2024-06-27 13:50:41,416 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-27 13:50:41,416 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 13:50:41,416 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 13:50:41,463 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 13:50:41,463 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 312 ms
+2024-06-27 13:50:41,569 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-27 13:50:41,578 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-27 13:50:41,582 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.617 seconds (JVM running for 0.797)
+2024-06-27 13:50:44,793 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 13:50:44,793 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 13:50:44,794 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2024-06-27 13:50:44,857 INFO [http-nio-8080-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":" UAT#698 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】无\n当前构建始于 13:50:30    耗时14秒"}
+2024-06-27 13:50:45,202 INFO [http-nio-8080-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667cfdb5e4b04f4807f5d3a0","sendTime":"2024-06-27 13:50:45.307"},"error":null,"errorCode":0,"success":true}
+2024-06-27 13:52:34,493 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 98686 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 13:52:34,494 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 13:52:34,768 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2024-06-27 13:52:34,770 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-27 13:52:34,770 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 13:52:34,771 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 13:52:34,814 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 13:52:34,814 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 305 ms
+2024-06-27 13:52:34,921 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-27 13:52:34,930 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-27 13:52:34,934 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.598 seconds (JVM running for 0.778)
+2024-06-27 13:52:38,654 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 13:52:38,654 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 13:52:38,655 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2024-06-27 13:52:42,362 INFO [http-nio-8080-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":" UAT#698 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】无\n当前构建始于 13:52:28    耗时14秒"}
+2024-06-27 13:52:42,705 INFO [http-nio-8080-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667cfe2ae4b07e3219ce739f","sendTime":"2024-06-27 13:52:42.808"},"error":null,"errorCode":0,"success":true}
+2024-06-27 14:11:40,097 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 99067 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 14:11:40,099 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 14:11:40,376 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 14:11:40,378 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:11:40,379 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 14:11:40,379 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 14:11:40,425 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 14:11:40,425 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 312 ms
+2024-06-27 14:11:40,532 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:11:40,542 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 14:11:40,546 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.601 seconds (JVM running for 0.795)
+2024-06-27 14:12:03,895 INFO [http-nio-8274-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 14:12:03,895 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 14:12:03,896 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2024-06-27 14:12:06,299 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":" UAT#698 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】无\n当前构建始于 14:11:52    耗时14秒"}
+2024-06-27 14:12:06,758 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667d02b6e4b02511fd90175a","sendTime":"2024-06-27 14:12:06.820"},"error":null,"errorCode":0,"success":true}
+2024-06-27 14:12:16,951 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 99077 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 14:12:16,952 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 14:12:17,189 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 14:12:17,191 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:12:17,191 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 14:12:17,192 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 14:12:17,229 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 14:12:17,229 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 264 ms
+2024-06-27 14:12:17,317 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:12:17,325 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 14:12:17,329 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.499 seconds (JVM running for 0.656)
+2024-06-27 14:37:16,834 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 99731 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 14:37:16,837 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 14:37:17,112 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 14:37:17,115 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:37:17,115 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 14:37:17,115 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 14:37:17,160 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 14:37:17,160 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 309 ms
+2024-06-27 14:37:17,266 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:37:17,275 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 14:37:17,279 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.599 seconds (JVM running for 0.786)
+2024-06-27 14:37:50,039 INFO [http-nio-8274-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 14:37:50,039 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 14:37:50,040 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2024-06-27 14:37:54,195 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":"@æ¨æ³¢ UAT#699 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】\n../form/portal/homepage/HomePageSchemePlugin.java\n\n当前构建始于 14:37:25    耗时29秒"}
+2024-06-27 14:37:54,761 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667d08c2e4b0782f6cc139f0","sendTime":"2024-06-27 14:37:54.846"},"error":null,"errorCode":0,"success":true}
+2024-06-27 14:48:50,030 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 99907 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 14:48:50,032 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 14:48:50,322 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 14:48:50,324 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:48:50,324 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 14:48:50,324 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 14:48:50,366 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 14:48:50,366 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 320 ms
+2024-06-27 14:48:50,475 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:48:50,484 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 14:48:50,488 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.612 seconds (JVM running for 0.8)
+2024-06-27 14:48:56,209 INFO [http-nio-8274-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 14:48:56,209 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 14:48:56,209 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2024-06-27 14:49:58,138 ERROR [http-nio-8274-exec-1] j.c.s.i.CallbackNotifyServiceSDIGImpl [CallbackNotifyServiceSDIGImpl.java:111] Unrecognized token 'java': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"java.io.BufferedInputStream@391eef75"; line: 1, column: 5]
+2024-06-27 14:49:58,652 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":" UAT#699 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】\n../form/portal/homepage/HomePageSchemePlugin.java\n\n当前构建始于 14:49:29    耗时29秒"}
+2024-06-27 14:49:59,305 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667d0b97e4b00f52c66cfa0c","sendTime":"2024-06-27 14:49:59.343"},"error":null,"errorCode":0,"success":true}
+2024-06-27 14:51:43,119 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 99952 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 14:51:43,121 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 14:51:43,395 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 14:51:43,397 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:51:43,397 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 14:51:43,397 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 14:51:43,440 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 14:51:43,440 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 305 ms
+2024-06-27 14:51:43,545 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 14:51:43,554 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 14:51:43,558 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.614 seconds (JVM running for 0.803)
+2024-06-27 14:51:49,789 INFO [http-nio-8274-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 14:51:49,789 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 14:51:49,790 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2024-06-27 14:52:01,639 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":"@杨波 UAT#699 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】\n../form/portal/homepage/HomePageSchemePlugin.java\n\n当前构建始于 14:51:32    耗时29秒"}
+2024-06-27 14:52:02,197 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"667ce346e4b0dccc8f1b600b","msgId":"BOT-667d0c12e4b04f4808050ef6","sendTime":"2024-06-27 14:52:02.232"},"error":null,"errorCode":0,"success":true}
+2024-06-27 15:00:34,224 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 213 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 15:00:34,226 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 15:00:34,570 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 15:00:34,572 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 15:00:34,573 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 15:00:34,573 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 15:00:34,623 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 15:00:34,624 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 382 ms
+2024-06-27 15:00:34,647 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'callbackNotifyServiceSDIGImpl' defined in file [/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main/jenkins/callbacktransfer/service/impl/CallbackNotifyServiceSDIGImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2024-06-27 15:00:34,648 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2024-06-27 15:00:34,653 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-27 15:00:34,660 ERROR [main] o.s.b.SpringApplication [SpringApplication.java:818] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'callbackNotifyServiceSDIGImpl' defined in file [/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main/jenkins/callbacktransfer/service/impl/CallbackNotifyServiceSDIGImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at jenkins.callbacktransfer.JenkinsCallbackTransferApplication.main(JenkinsCallbackTransferApplication.java:10)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 17 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [scmaccount.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:203)
+	at jenkins.callbacktransfer.util.ResourceUtils.readFile(ResourceUtils.java:26)
+	at jenkins.callbacktransfer.util.ResourceUtils.readProperty(ResourceUtils.java:16)
+	at jenkins.callbacktransfer.service.impl.CallbackTransferServiceSDIGImpl.<clinit>(CallbackNotifyServiceSDIGImpl.java:34)
+	... 24 common frames omitted
+2024-06-27 15:01:18,985 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:55] Starting JenkinsCallbackTransferApplication using Java 1.8.0_401 on mac with PID 230 (/Users/qian/kingdee/code/jenkins-callback-transfer/build/classes/java/main started by qian in /Users/qian/kingdee/code/jenkins-callback-transfer)
+2024-06-27 15:01:18,986 INFO [main] j.c.JenkinsCallbackTransferApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2024-06-27 15:01:19,262 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8274 (http)
+2024-06-27 15:01:19,264 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8274"]
+2024-06-27 15:01:19,265 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-06-27 15:01:19,265 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2024-06-27 15:01:19,308 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-06-27 15:01:19,308 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 308 ms
+2024-06-27 15:01:19,417 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8274"]
+2024-06-27 15:01:19,426 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8274 (http) with context path ''
+2024-06-27 15:01:19,430 INFO [main] j.c.JenkinsCallbackTransferApplication [StartupInfoLogger.java:61] Started JenkinsCallbackTransferApplication in 0.605 seconds (JVM running for 0.796)
+2024-06-27 15:01:25,773 INFO [http-nio-8274-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 15:01:25,773 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-06-27 15:01:25,774 INFO [http-nio-8274-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2024-06-27 15:01:28,771 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:61] 请求信息：{"content":"@杨波 UAT#699 构建上传完成，请于GPASS进行手动重启\n【分支】origin/dev\n【变更项】\n../form/portal/homepage/HomePageSchemePlugin.java\n\n当前构建始于 15:00:59    耗时29秒"}
+2024-06-27 15:01:29,713 INFO [http-nio-8274-exec-1] j.c.y.YZJBot [YZJBot.java:73] 云之家响应：{"data":{"groupId":"662f1ee8e4b0712eaae1e7b7_ext","msgId":"BOT-667d0e49e4b0da67b18973d3","sendTime":"2024-06-27 15:01:29.762"},"error":null,"errorCode":0,"success":true}
