@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class CallbackTransferController {
-    private final CallbackTransferService notifyService;
+    private final CallbackTransferService transferService;
 
     @Autowired
-    public CallbackTransferController(CallbackTransferService notifyService) {
-        this.notifyService = notifyService;
+    public CallbackTransferController(CallbackTransferService transferService) {
+        this.transferService = transferService;
     }
 
     @CrossOrigin
@@ -29,6 +29,6 @@ public class CallbackTransferController {
     @CrossOrigin
     @RequestMapping("/yzj/notify")
     public void toYzj(@RequestBody NotifyContent notifyContent) {
-        notifyService.onNotify(notifyContent);
+        transferService.onNotify(notifyContent);
     }
 }
