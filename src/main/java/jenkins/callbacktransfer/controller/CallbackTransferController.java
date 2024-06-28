@@ -2,10 +2,8 @@ package jenkins.callbacktransfer.controller;
 
 import jenkins.callbacktransfer.bean.NotifyContent;
 import jenkins.callbacktransfer.service.CallbackTransferService;
-import jenkins.callbacktransfer.service.impl.CallbackTransferServiceSDIGImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class CallbackTransferController {
+    private final CallbackTransferService notifyService;
+
     @Autowired
-    private ApplicationContext context;
+    public CallbackTransferController(CallbackTransferService notifyService) {
+        this.notifyService = notifyService;
+    }
 
     @CrossOrigin
     @RequestMapping("/test")
@@ -27,7 +29,6 @@ public class CallbackTransferController {
     @CrossOrigin
     @RequestMapping("/yzj/notify")
     public void toYzj(@RequestBody NotifyContent notifyContent) {
-        CallbackTransferService notifyService = context.getBean(CallbackTransferServiceSDIGImpl.class);
         notifyService.onNotify(notifyContent);
     }
 }

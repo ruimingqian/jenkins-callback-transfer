@@ -2,3 +2,7 @@ server:
   port: 8274
 yzj:
   url: "https://www.yunzhijia.com/gateway/robot/webhook/send?yzjtype=0&yzjtoken=426d2d48cd33475299c0ba263e1f77d4"
+job_prefix: "kd-cd-sdjt-biz-"
+exclude_prefix: "kd-cd-sdjt-rpt-budget"
+biz_chop_path: "code/kd-cd-sdjt/kd-cd-sdjt-biz/src/kd/cd/sdjt/biz"
+exclude_chop_path: "code/kd-cd-sdjt/kd-cd-sdjt-rpt-budget/src/main/java/kd/cd/sdjt/biz"
