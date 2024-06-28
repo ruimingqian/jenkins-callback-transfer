@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
-@Component
 @Primary
+@Component
 public class CallbackTransferServiceImpl implements CallbackTransferService {
     private static final JsonNode scmNode;
     @Value("${job_prefix}")
