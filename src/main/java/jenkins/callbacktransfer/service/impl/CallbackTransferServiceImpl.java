@@ -53,7 +53,7 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
                         build.getNotes(),
                         scm.getBranch(),
                         getChangedCodeDesc(scm),
-                        calculateStartTime(build.getDuration()),
+                        deduceStartTime(build.getDuration()),
                         build.getDuration() / 1000);
 
                 bot.notifyByParts(msg, 1500);
@@ -121,7 +121,7 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
         return StringUtils.removeEnd(sb.toString(), " ");
     }
 
-    private static String calculateStartTime(int duration) {
+    private static String deduceStartTime(int duration) {
         Instant instant = Instant.ofEpochMilli(System.currentTimeMillis() - duration);
         LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
