@@ -10,6 +10,7 @@ import jenkins.callbacktransfer.service.CallbackTransferService;
 import jenkins.callbacktransfer.util.ResourceUtils;
 import jenkins.callbacktransfer.yzj.YZJBot;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
@@ -20,12 +21,14 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
 @Primary
 @Component
+@Slf4j
 public class CallbackTransferServiceImpl implements CallbackTransferService {
     private static final JsonNode scmNode;
     @Value("${job_prefix}")
@@ -46,8 +49,7 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
             Scm scm = build.getScm();
             //暂时排除报表模块提交
             if (!allChangesAreFromExcludeModule(scm)) {
-                String msg = String.format("%s %s#%s %s%n【分支】%s%n【变更项】%s%n当前构建始于 %s    耗时%s秒",
-                        getCulpritsNameExpr(scm),
+                String msg = String.format("%s#%s %s%n【分支】%s%n【变更项】%s%n当前构建始于 %s    耗时%s秒",
                         getEnvName(content),
                         build.getNumber(),
                         build.getNotes(),
@@ -55,14 +57,14 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
                         getChangedCodeDesc(scm),
                         deduceStartTime(build.getDuration()),
                         build.getDuration() / 1000);
-
-                bot.notifyByParts(msg, 1500);
+                List<String> phones = getCulpritsPhones(scm);
+                bot.notifyByParts(msg, 1500, phones);
             }
 
         } else if ("FAILURE".equalsIgnoreCase(build.getStatus())) {
             bot.notify(String.format("%s#%s构建失败，请联系管理员！",
                     getEnvName(content),
-                    build.getNumber()));
+                    build.getNumber()), null);
         }
     }
 
@@ -105,20 +107,23 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
     }
 
     @SneakyThrows
-    private static String getCulpritsNameExpr(Scm scm) {
+    private static List<String> getCulpritsPhones(Scm scm) {
+        List<String> phones = new ArrayList<>();
         List<String> culprits = scm.getCulprits();
-        StringBuilder sb = new StringBuilder(culprits.size());
-
+        if (culprits == null) {
+            return phones;
+        }
+        log.info("Raw culprits: {}", culprits);
         for (String culprit : culprits) {
             JsonNode node = scmNode.get(culprit);
             if (node != null) {
-                String name = node.textValue();
-                if (StringUtils.isNotBlank(name)) {
-                    sb.append('@').append(name.trim()).append(' ');
+                String phone = node.textValue();
+                if (StringUtils.isNotBlank(phone)) {
+                    phones.add(phone.trim());
                 }
             }
         }
-        return StringUtils.removeEnd(sb.toString(), " ");
+        return phones;
     }
 
     private static String deduceStartTime(int duration) {

@@ -2,6 +2,7 @@ package jenkins.callbacktransfer.yzj;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.Getter;
 import lombok.SneakyThrows;
@@ -28,12 +29,12 @@ public class YZJBot {
         this.url = url;
     }
 
-    public boolean notifyByParts(String bigContent, int partLength) {
+    public boolean notifyByParts(String bigContent, int partLength, List<String> limitPhoneNums) {
         List<String> list = splitByLength(bigContent, partLength);
         boolean success = true;
         for (String part : list) {
             if (success) {
-                success = notify(part);
+                success = notify(part, limitPhoneNums);
             }
         }
         return success;
@@ -52,12 +53,20 @@ public class YZJBot {
     }
 
     @SneakyThrows
-    public boolean notify(String content) {
+    public boolean notify(String content, List<String> limitPhoneNums) {
         ObjectMapper objectMapper = new ObjectMapper();
         ObjectNode json = objectMapper.createObjectNode();
         json.put("content", content);
+        if (limitPhoneNums != null && !limitPhoneNums.isEmpty()) {
+            ArrayNode array = objectMapper.createArrayNode();
+            ObjectNode subJson = objectMapper.createObjectNode();
+            subJson.put("type", "mobiles");
+            ArrayNode phoneNumsArray = objectMapper.valueToTree(limitPhoneNums);
+            subJson.set("values", phoneNumsArray);
+            array.add(subJson);
+            json.set("notifyParams", array);
+        }
         String jsonString = objectMapper.writeValueAsString(json);
-
         log.info("请求信息：{}", StringUtils.substring(jsonString, 0, 200));
 
         RequestBody body = RequestBody.create(jsonString, MediaType.get("application/json; charset=utf-8"));
