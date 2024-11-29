@@ -45,8 +45,9 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
     public void onNotify(NotifyContent content) {
         YZJBot bot = new YZJBot("Jenkins回调", notifyUrl);
         Build build = content.getBuild();
+        Scm scm = build.getScm();
+        List<String> phones = getCulpritsPhones(scm);
         if ("SUCCESS".equalsIgnoreCase(build.getStatus())) {
-            Scm scm = build.getScm();
             //暂时排除报表模块提交
             if (!allChangesAreFromExcludeModule(scm)) {
                 String msg = String.format("%s#%s %s%n【分支】%s%n【变更项】%s%n当前构建始于 %s    耗时%s秒",
@@ -57,15 +58,26 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
                         getChangedCodeDesc(scm),
                         deduceStartTime(build.getDuration()),
                         build.getDuration() / 1000);
-                List<String> phones = getCulpritsPhones(scm);
                 bot.notifyByParts(msg, 1500, phones);
             }
 
         } else if ("FAILURE".equalsIgnoreCase(build.getStatus())) {
-            bot.notify(String.format("%s#%s构建失败，请联系管理员！",
+            String log = beautifyLog(build.getLog());
+            bot.notifyByParts(String.format("%s#%s构建失败：",
                     getEnvName(content),
-                    build.getNumber()), null);
+                    build.getNumber()) + "\n" + log, 1500, null);
         }
+    }
+
+    private static String beautifyLog(String log) {
+        String beautyLog = log;
+        if (StringUtils.contains(log, "> Task :compileJava FAILED")) {
+            beautyLog = StringUtils.substringBefore(beautyLog, "> Task :compileJava FAILED");
+        }
+        if (StringUtils.contains(beautyLog, "> Task :compileJava")) {
+            beautyLog = StringUtils.substringAfter(beautyLog, "> Task :compileJava");
+        }
+        return StringUtils.chomp(beautyLog);
     }
 
     private String getEnvName(NotifyContent content) {
