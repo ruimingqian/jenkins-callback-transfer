@@ -22,6 +22,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -77,6 +78,14 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
         if (StringUtils.contains(beautyLog, "> Task :compileJava")) {
             beautyLog = StringUtils.substringAfter(beautyLog, "> Task :compileJava");
         }
+        String[] split = StringUtils.split(beautyLog, "\n");
+        beautyLog = Arrays.stream(split).map(s -> {
+            if (StringUtils.contains(s, "/src/")) {
+                return StringUtils.substringAfter(s, "/src/");
+            } else {
+                return s;
+            }
+        }).collect(Collectors.joining("\n"));
         return StringUtils.chomp(beautyLog);
     }
 
