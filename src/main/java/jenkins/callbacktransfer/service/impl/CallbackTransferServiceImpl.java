@@ -64,7 +64,7 @@ public class CallbackTransferServiceImpl implements CallbackTransferService {
 
         } else if ("FAILURE".equalsIgnoreCase(build.getStatus())) {
             String log = beautifyLog(build.getLog());
-            bot.notifyByParts(String.format("%s#%s构建失败！",
+            bot.notifyByParts(String.format("%s#%s 构建失败！",
                     getEnvName(content),
                     build.getNumber()) + "\n" + log, 1500, null);
         }
